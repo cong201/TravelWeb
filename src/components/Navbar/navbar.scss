@@ -1,0 +1,184 @@
+.navbarSection {
+    .header {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: transparent;
+        width: 100%;
+        padding: 1rem;
+        z-index: 1000;
+
+        .logoDiv {
+            .logo {
+                color: rgb(249, 120, 20);
+                font-weight: 500;
+                cursor: pointer;
+                align-items: center;
+                justify-content: center;
+
+                .icon {
+                    color: rgb(249, 120, 20);
+                    font-size: 25px;
+                }
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .navbar {
+                background-color: rgb(233, 228, 228);
+                position: absolute;
+                height: max-content;
+                padding: 1rem;
+                width: 100%;
+                top: 0;
+                left: -500%;
+                box-shadow: 0 2px 4px rbga(209, 209, 209, 0.904);
+                transition: .5s ease;
+                z-index: 1000;
+
+                .navLists {
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 100%;
+                    margin: auto;
+
+                    .navItems {
+                        padding: 1rem 0;
+
+                        .navLink {
+                            color: black;
+                            font-size: .9rem;
+                            font-weight: 600;
+
+                            &:hover {
+                                color: rgb(249, 120, 20);
+                            }
+                        }
+                    }
+
+                    .headerBtn {
+                        flex-direction: column;
+
+                        .btn {
+                            margin-top: 1rem;
+
+                            a {
+                                font-weight: 600;
+
+                                &:hover {
+                                    color: white;
+                                }
+                            }
+                        }
+
+                        .loginBtn {
+                            background: none;
+                            border: 1px solid rgb(249, 120, 20);
+
+                            a {
+                                color: rgb(249, 120, 20);
+                            }
+
+                            &:hover {
+                                background: rgb(249, 120, 20);
+
+                                a {
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .closeNavbar {
+                    position: absolute;
+                    top: 1rem;
+                    right: 1.5rem;
+                    color: rgb(249, 120, 20);
+
+                    &:hover {
+                        color: rgb(199, 92, 10);
+                    }
+                }
+            }
+
+            .activeNavbar {
+                left: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .navbarSection {
+
+        .toggleNavbar,
+        .closeNavbar {
+            display: none;
+        }
+
+        .header {
+            padding: 1.5rem 2rem;
+
+            .navbar {
+                .navLists {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: row;
+
+                    .navItems {
+                        .navLink {
+                            color: rgb(8, 8, 8);
+                            padding: 0 .45rem;
+                            font-size: .9rem;
+                            font-weight: 400;
+
+                            &:hover {
+                                color: rgb(249, 120, 20);
+                            }
+                        }
+
+                    }
+
+                    .btn {
+                        margin-left: 1rem;
+
+                        a {
+                            color: rgb(4, 4, 4);
+                            font-weight: 500;
+                        }
+                    }
+
+                    .loginBtn {
+                        background: none;
+                        border: 1px solid rgb(249, 120, 20);
+
+                        &:hover {
+                            background: rgb(249, 120, 20);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width :960px) {
+    .header {
+        .navbar {
+            .navLists {
+                .navItems {
+                    padding: 0 .7rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width :1024px) {
+    .header {
+        padding: 1rem 8.5rem !important;
+    }
+}

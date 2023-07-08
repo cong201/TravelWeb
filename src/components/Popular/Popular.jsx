@@ -3,7 +3,7 @@ import './popular.css'
 
 function Popular() {
     return (<div>
-        popular
+
     </div>);
 }
 

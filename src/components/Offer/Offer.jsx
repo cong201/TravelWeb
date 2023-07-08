@@ -3,7 +3,7 @@ import './offer.css'
 
 function Offer() {
     return (<div>
-        offer
+
     </div>);
 }
 
