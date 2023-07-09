@@ -1,0 +1,169 @@
+.popular {
+    padding-top: 16rem;
+
+    .secContainer {
+        .secHeader {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+
+            .textDiv {
+                .secTitle {
+                    color: black;
+                    line-height: 1.5rem;
+                    padding-bottom: .5rem;
+                    font-size: 28px;
+                }
+
+                p {
+                    font-size: 18px;
+                }
+            }
+
+            .iconDiv {
+                gap: .5rem;
+
+                .icon {
+                    padding: .5rem;
+                    background: rgb(238, 236, 236);
+                    border-radius: 50%;
+                    font-size: 2.5rem;
+
+                    &:hover {
+                        background: black;
+                        color: white;
+                    }
+                }
+
+                .leftIcon {
+                    background: black;
+                    color: white;
+
+                    &:hover {
+                        background: rgb(238, 236, 236);
+                        color: black;
+                    }
+                }
+            }
+        }
+
+        .mainContent {
+            padding: 2rem 0;
+            gap: 1rem;
+
+            .singleDestinaton {
+                overflow: hidden;
+                border-radius: 1rem;
+                box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.334);
+
+                .destImage {
+                    height: 600px;
+                    width: 100%;
+                    position: relative;
+                    overflow: hidden;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+
+                    .overlayInfo {
+                        position: absolute;
+                        display: flex;
+                        align-items: flex-start;
+                        padding: 0;
+                        justify-content: center;
+                        flex-direction: column;
+                        background: linear-gradient(rgba(42, 42, 42, 0.864), rgba(0, 0, 0, 0.759));
+                        bottom: 0;
+                        width: 100%;
+                        height: 0;
+                        overflow: hidden;
+
+                        h3 {
+                            color: white;
+                            font-weight: 600;
+                        }
+
+                        p {
+                            color: white;
+                            opacity: .7;
+                            font-size: 18px;
+                        }
+                    }
+
+                    .icon {
+                        position: absolute;
+                        color: aliceblue;
+                        right: 10px;
+                        bottom: 10px;
+                        padding: .5rem;
+                        background: rgb(249, 120, 20);
+                        font-size: 3rem;
+                        border-radius: 50%;
+                        border: 1px solid transparent;
+                        transition: .3s ease;
+
+                        &:hover {
+                            background: black;
+                            border: 1px solid rgb(249, 120, 20);
+                            color: rgb(249, 120, 20);
+                        }
+                    }
+                }
+
+                .destFooter {
+                    padding: 1rem;
+
+                    .number {
+                        font-size: 2rem;
+                        font-weight: 700;
+                        color: black;
+                        position: relative;
+                        width: max-content;
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            background: rgb(249, 120, 20);
+                            top: 45%;
+                            right: -150%;
+                            height: 5px;
+                            width: 45px;
+                            border-radius: 1rem;
+                        }
+                    }
+
+                    .destText {
+                        justify-content: space-between;
+
+                        h6 {
+                            color: black;
+                            font-size: 18px;
+                        }
+
+                        .flex {
+                            font-size: 20px;
+                            font-weight: 600;
+                            align-items: flex-start;
+                            transform: translateY(5px);
+
+                            .icon {
+                                color: rgb(249, 120, 20);
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    .overlayInfo {
+                        overflow: visible;
+                        padding: 1rem 1.5rem;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

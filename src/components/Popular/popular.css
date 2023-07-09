@@ -1,1 +1,140 @@
-/*# sourceMappingURL=popular.css.map */
+.popular {
+  padding-top: 16rem;
+}
+.popular .secContainer .secHeader {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.popular .secContainer .secHeader .textDiv .secTitle {
+  color: black;
+  line-height: 1.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 28px;
+}
+.popular .secContainer .secHeader .textDiv p {
+  font-size: 18px;
+}
+.popular .secContainer .secHeader .iconDiv {
+  gap: 0.5rem;
+}
+.popular .secContainer .secHeader .iconDiv .icon {
+  padding: 0.5rem;
+  background: rgb(238, 236, 236);
+  border-radius: 50%;
+  font-size: 2.5rem;
+}
+.popular .secContainer .secHeader .iconDiv .icon:hover {
+  background: black;
+  color: white;
+}
+.popular .secContainer .secHeader .iconDiv .leftIcon {
+  background: black;
+  color: white;
+}
+.popular .secContainer .secHeader .iconDiv .leftIcon:hover {
+  background: rgb(238, 236, 236);
+  color: black;
+}
+.popular .secContainer .mainContent {
+  padding: 2rem 0;
+  gap: 1rem;
+}
+.popular .secContainer .mainContent .singleDestinaton {
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.334);
+}
+.popular .secContainer .mainContent .singleDestinaton .destImage {
+  height: 600px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.popular .secContainer .mainContent .singleDestinaton .destImage img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.popular .secContainer .mainContent .singleDestinaton .destImage .overlayInfo {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  padding: 0;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(rgba(42, 42, 42, 0.864), rgba(0, 0, 0, 0.759));
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+}
+.popular .secContainer .mainContent .singleDestinaton .destImage .overlayInfo h3 {
+  color: white;
+  font-weight: 600;
+}
+.popular .secContainer .mainContent .singleDestinaton .destImage .overlayInfo p {
+  color: white;
+  opacity: 0.7;
+  font-size: 18px;
+}
+.popular .secContainer .mainContent .singleDestinaton .destImage .icon {
+  position: absolute;
+  color: aliceblue;
+  right: 10px;
+  bottom: 10px;
+  padding: 0.5rem;
+  background: rgb(249, 120, 20);
+  font-size: 3rem;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  transition: 0.3s ease;
+}
+.popular .secContainer .mainContent .singleDestinaton .destImage .icon:hover {
+  background: black;
+  border: 1px solid rgb(249, 120, 20);
+  color: rgb(249, 120, 20);
+}
+.popular .secContainer .mainContent .singleDestinaton .destFooter {
+  padding: 1rem;
+}
+.popular .secContainer .mainContent .singleDestinaton .destFooter .number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: black;
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+}
+.popular .secContainer .mainContent .singleDestinaton .destFooter .number::after {
+  content: "";
+  position: absolute;
+  background: rgb(249, 120, 20);
+  top: 45%;
+  right: -150%;
+  height: 5px;
+  width: 45px;
+  border-radius: 1rem;
+}
+.popular .secContainer .mainContent .singleDestinaton .destFooter .destText {
+  justify-content: space-between;
+}
+.popular .secContainer .mainContent .singleDestinaton .destFooter .destText h6 {
+  color: black;
+  font-size: 18px;
+}
+.popular .secContainer .mainContent .singleDestinaton .destFooter .destText .flex {
+  font-size: 20px;
+  font-weight: 600;
+  align-items: flex-start;
+  transform: translateY(5px);
+}
+.popular .secContainer .mainContent .singleDestinaton .destFooter .destText .flex .icon {
+  color: rgb(249, 120, 20);
+}
+.popular .secContainer .mainContent .singleDestinaton:hover .overlayInfo {
+  overflow: visible;
+  padding: 1rem 1.5rem;
+  height: 100%;
+}/*# sourceMappingURL=popular.css.map */

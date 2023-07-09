@@ -1,0 +1,98 @@
+.home {
+    position: relative;
+    height: 96vh;
+    background: linear-gradient(rgba(33, 33, 33, 0.522), rgba(33, 33, 33, 0.522)), url('../../assets/main.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    .secContainer {
+        .homeText {
+            text-align: center;
+
+            .title {
+                color: aliceblue;
+                font-size: 2.8rem;
+                font-weight: 700;
+                line-height: 2.5rem;
+            }
+
+            .subTitle {
+                color: white;
+                opacity: .9;
+                font-size: 18px;
+                font-weight: 300;
+                padding: 1rem 0;
+                max-width: 70%;
+                text-align: center;
+                margin: auto;
+            }
+
+            .btn {
+                font-size: 18px;
+                padding: .6rem 1.5rem;
+            }
+        }
+
+        .homeCard {
+            width: 80%;
+            border-radius: 1rem;
+            padding: 2rem;
+            background: white;
+            position: absolute;
+            gap: 1rem;
+            justify-content: center;
+            bottom: -25%;
+            transform: translate(-50%);
+            left: 50%;
+            box-shadow: 0 2px 8px 4px rgba(30, 30, 30, 0.45);
+
+            .locationDiv,
+            .distDiv,
+            .priceDiv {
+                width: 100%;
+
+                label {
+                    display: block;
+                    color: rgb(10, 10, 10);
+                    font-weight: 300;
+                    font-size: 18px;
+                    padding-bottom: .4rem;
+                }
+
+                input {
+                    width: 100%;
+                    background: rgb(241, 238, 238);
+                    border-radius: 10px;
+                    border: none;
+                    padding: 10px;
+                    font-size: 18px;
+                    font-weight: 500;
+
+                    &:hover {
+                        font-size: 16px;
+                        opacity: .6;
+                        font-weight: 400;
+                    }
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                }
+            }
+
+            .btn {
+                width: 100%;
+                padding: .6rem 1.5rem;
+                color: white;
+                font-weight: 600;
+                font-size: 18px;
+            }
+        }
+    }
+}

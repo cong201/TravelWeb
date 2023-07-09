@@ -19,6 +19,9 @@
   color: rgb(249, 120, 20);
   font-size: 25px;
 }
+.navbarSection .header .toggleNavbar {
+  color: aliceblue;
+}
 @media screen and (max-width: 768px) {
   .navbarSection .header .navbar {
     background-color: rgb(233, 228, 228);
@@ -88,6 +91,10 @@
     left: 0;
   }
 }
+.navbarSection .activeHeader {
+  background: rgb(94, 93, 93);
+  box-shadow: 0 2px 8px 2px rgb(224, 222, 222);
+}
 
 @media screen and (min-width: 768px) {
   .navbarSection .toggleNavbar,
@@ -104,10 +111,11 @@
     flex-direction: row;
   }
   .navbarSection .header .navbar .navLists .navItems .navLink {
-    color: rgb(8, 8, 8);
+    color: rgb(255, 255, 255);
     padding: 0 0.45rem;
     font-size: 0.9rem;
-    font-weight: 400;
+    font-weight: 600;
+    font-size: 1rem;
   }
   .navbarSection .header .navbar .navLists .navItems .navLink:hover {
     color: rgb(249, 120, 20);
@@ -116,8 +124,9 @@
     margin-left: 1rem;
   }
   .navbarSection .header .navbar .navLists .btn a {
-    color: rgb(4, 4, 4);
-    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 1rem;
   }
   .navbarSection .header .navbar .navLists .loginBtn {
     background: none;
