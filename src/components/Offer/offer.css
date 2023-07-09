@@ -1,1 +1,87 @@
-/*# sourceMappingURL=offer.css.map */
+.offer .secContainer .mainContent {
+  gap: 1rem;
+}
+.offer .secContainer .mainContent .singleOffer {
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 0.5rem;
+  box-shadow: 0 2px 8px 2px rgb(58, 53, 53);
+}
+.offer .secContainer .mainContent .singleOffer .icon {
+  font-size: 20px;
+  color: rgb(113, 113, 113);
+}
+.offer .secContainer .mainContent .singleOffer small {
+  font-weight: 500;
+  color: rgb(113, 113, 113);
+}
+.offer .secContainer .mainContent .singleOffer .destImg {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  background-size: cover;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.offer .secContainer .mainContent .singleOffer .destImg img {
+  height: 100%;
+}
+.offer .secContainer .mainContent .singleOffer .destImg .discount {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background: rgb(249, 120, 20);
+  color: white;
+  border-radius: 3rem;
+  font-size: 14px;
+  font-weight: 500;
+}
+.offer .secContainer .mainContent .singleOffer .offerBody {
+  padding: 1rem;
+}
+.offer .secContainer .mainContent .singleOffer .offerBody .price {
+  justify-content: space-between;
+}
+.offer .secContainer .mainContent .singleOffer .offerBody .price h4 {
+  color: black;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.offer .secContainer .mainContent .singleOffer .offerBody .price .status {
+  padding: 5px 10px;
+  color: rgb(245, 192, 92);
+  background: rgb(155, 155, 155);
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 3rem;
+}
+.offer .secContainer .mainContent .singleOffer .offerBody .amenities {
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 1rem 0;
+  gap: 0.5rem;
+}
+.offer .secContainer .mainContent .singleOffer .offerBody .amenities .singleAmen {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: rgb(155, 155, 155);
+  gap: 0.5rem;
+}
+.offer .secContainer .mainContent .singleOffer .offerBody .btn {
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  padding: 0.6rem;
+  color: white;
+  font-weight: 600;
+  gap: 1rem;
+}
+.offer .secContainer .mainContent .singleOffer .offerBody .btn .icon {
+  color: white;
+}
+.offer .secContainer .mainContent .singleOffer:hover {
+  transform: translateY(-7px);
+}/*# sourceMappingURL=offer.css.map */
