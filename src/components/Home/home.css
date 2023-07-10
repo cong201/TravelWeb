@@ -91,6 +91,16 @@
   font-size: 18px;
 }
 
+@media screen and (min-width: 390px) {
+  .home .secContainer .homeCard {
+    bottom: -35px;
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .home .secContainer .homeCard .btn {
+    transform: translateY(15px);
+  }
+}
 @media screen and (min-width: 480px) {
   .home .secContainer .homeCard {
     bottom: -25px;
