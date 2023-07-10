@@ -5,7 +5,7 @@
             line-height: 1.5rem;
             padding-bottom: 2rem;
             text-align: center;
-            font-size: 1.1rem;
+            font-size: 2rem;
         }
 
         .mainContent {
@@ -66,7 +66,7 @@
 
             .cardVideo {
                 border: 2px solid white;
-                height: 200px;
+                height: 300px;
                 width: 100%;
                 border-radius: 10px;
                 overflow: hidden;
@@ -76,6 +76,45 @@
                     width: 100%;
                     object-fit: cover;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .about {
+        .secContainer {
+            .videoCard {
+                .cardContent {
+                    gap: 4rem;
+                    padding: 4rem 3rem;
+
+                    .cardText {
+                        h3 {
+                            font-size: 2rem;
+                        }
+
+                        p {
+                            opacity: .7;
+                            font-size: 15px;
+                        }
+                    }
+                }
+
+                .cardContent {
+                    grid-template-columns: repeat(2, 1fr) !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .about {
+        .secContainer {
+            .mainContent {
+                padding: 2.5rem 0;
+                grid-template-columns: repeat(4, 1fr) !important;
             }
         }
     }

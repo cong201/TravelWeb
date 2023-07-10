@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './offer.css'
+import Aos from "aos";
+import 'aos/dist/aos.css';
+
 import { MdKingBed, MdBathtub, MdAirportShuttle, MdLocationOn } from 'react-icons/md'
 import { FaWifi } from 'react-icons/fa'
 import { BsArrowRightShort } from 'react-icons/bs'
@@ -31,34 +34,25 @@ const Offers = [
         location: '40 Vine #10, Nghe An',
         grade: '$150'
     },
-    {
-        id: 4,
-        imgSrc: img4,
-        destTitle: 'Quang Son',
-        location: '300 Vine #60,Do Luong',
-        grade: '$1000'
-    },
-    {
-        id: 5,
-        imgSrc: img5,
-        destTitle: 'Vinh City',
-        location: '140 Vine #110,Nghe An',
-        grade: '$868'
-    },
 ]
 
 const Offer = () => {
+
+    useEffect(() => {
+        Aos.init({ duration: 2000 })
+    }, [])
+
     return (
         <section className="offer container section">
             <div className="secContainer">
-                <div className="secIntro">
+                <div data-aos="fade-right" data-aos-duration="2500" className="secIntro">
                     <h2 className="secTitle">Special offer</h2>
                     <p>From historical cities to natural spectecular , come see the best place of the world</p>
                 </div>
                 <div className="mainContent grid">
                     {
                         Offers.map(({ id, imgSrc, destTitle, location, price }) => {
-                            return (<div className="singleOffer">
+                            return (<div data-aos="fade-up" data-aos-duration="3500" className="singleOffer">
                                 <div className="destImg">
                                     <img src={imgSrc} alt="Image Name" />
                                     <span className="discount">30% off</span>

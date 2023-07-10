@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './about.css'
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 import img1 from '../../assets/hikings.jpg'
 import img2 from '../../assets/message.jpg'
@@ -9,12 +11,17 @@ import img4 from '../../assets/moutain.jpg'
 import video from '../../assets/video.mp4'
 
 const About = () => {
+
+    useEffect(() => {
+        Aos.init({ duration: 2000 })
+    }, [])
+
     return (
         <section className="about section">
             <div className="secContainer">
-                <h3 className="title">Why Hikings?</h3>
+                <h3 data-aos="fade-right" data-aos-duration="2500" className="title">Why Hikings?</h3>
 
-                <div className="mainContent container grid">
+                <div data-aos="fade-up" data-aos-duration="2500" className="mainContent container grid">
                     <div className="singleItem">
                         <img src={img4} alt="Image Item" />
                         <h3>100+ Moutain</h3>
@@ -48,7 +55,7 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="videoCard container">
+                <div data-aos="fade-up" data-aos-duration="2500" className="videoCard container">
                     <div className="cardContent grid">
 
                         <div className="cardText">

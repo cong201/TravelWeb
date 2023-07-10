@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './popular.css'
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 import { BsArrowLeftShort, BsArrowRightShort, BsDot } from 'react-icons/bs'
 import img1 from '../../assets/custumize.jpg'
@@ -37,28 +39,25 @@ const Data = [
         location: 'Do Luong',
         grade: 'BEST BEAUTIFULL VILLAGE'
     },
-    {
-        id: 5,
-        imgSrc: img5,
-        destTitle: 'Vinh City',
-        location: 'Nghe An',
-        grade: 'BEST BEAUTIFULL City'
-    },
 ]
 
 const Popular = () => {
+
+    useEffect(() => {
+        Aos.init({ duration: 2000 })
+    }, [])
+
     return (
         <section className="popular section container">
             <div className="secContainer">
-
                 <div className="secHeader grid">
-                    <div className="textDiv">
+                    <div data-aos="fade-right" data-aos-duration="2500" className="textDiv">
                         <h2 className="secTitle">Popular Destination</h2>
                         <p>
                             From historical cities to natural spectercular, come see the best of the world.
                         </p>
                     </div>
-                    <div className="iconDiv flex">
+                    <div data-aos="fade-left" data-aos-duration="2500" className="iconDiv flex">
                         <BsArrowLeftShort className="icon leftIcon" />
                         <BsArrowRightShort className="icon rightIcon" />
                     </div>
@@ -68,7 +67,7 @@ const Popular = () => {
                     {
                         Data.map(({ id, imgSrc, destTitle, location, grade }) => {
                             return (
-                                <div className="singleDestinaton">
+                                <div data-aos="fade-up" data-aos-duration="3500" className="singleDestinaton">
 
                                     <div className="destImage">
                                         <img src={imgSrc} alt="Image title" />

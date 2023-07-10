@@ -1,5 +1,5 @@
 .popular {
-  padding-top: 16rem;
+  padding-top: 8rem;
 }
 .popular .secContainer .secHeader {
   flex-direction: column;
@@ -19,6 +19,7 @@
   gap: 0.5rem;
 }
 .popular .secContainer .secHeader .iconDiv .icon {
+  float: right;
   padding: 0.5rem;
   background: rgb(238, 236, 236);
   border-radius: 50%;
@@ -46,7 +47,7 @@
   box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.334);
 }
 .popular .secContainer .mainContent .singleDestinaton .destImage {
-  height: 600px;
+  height: 240px;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -137,4 +138,44 @@
   overflow: visible;
   padding: 1rem 1.5rem;
   height: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .popular {
+    padding-top: 10rem;
+  }
+}
+@media screen and (min-width: 556px) {
+  .popular .secContainer .secHeader {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+  }
+  .popular .secContainer .secHeader .textDiv {
+    text-align: start;
+    max-width: 100%;
+  }
+  .popular .secContainer .secHeader .iconDiv {
+    justify-content: flex-end;
+  }
+}
+@media screen and (min-width: 720px) {
+  .popular {
+    padding-top: 7rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .popular {
+    padding-top: 10rem;
+  }
+  .popular .secContainer .secHeader .textDiv .secTitle {
+    font-size: 2.2rem;
+  }
+  .popular .secContainer .secHeader .textDiv p {
+    font-size: 20px;
+  }
+  .popular .secContainer .mainContent {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem !important;
+  }
 }/*# sourceMappingURL=popular.css.map */

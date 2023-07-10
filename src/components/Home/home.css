@@ -1,6 +1,6 @@
 .home {
   position: relative;
-  height: 96vh;
+  height: 86vh;
   background: linear-gradient(rgba(33, 33, 33, 0.522), rgba(33, 33, 33, 0.522)), url("../../assets/main.jpg");
   background-position: center;
   background-size: cover;
@@ -20,7 +20,7 @@
   line-height: 2.5rem;
 }
 .home .secContainer .homeText .subTitle {
-  color: white;
+  color: rgb(255, 255, 255);
   opacity: 0.9;
   font-size: 18px;
   font-weight: 300;
@@ -89,4 +89,45 @@
   color: white;
   font-weight: 600;
   font-size: 18px;
+}
+
+@media screen and (min-width: 480px) {
+  .home .secContainer .homeCard {
+    bottom: -25px;
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .home .secContainer .homeCard .btn {
+    transform: translateY(15px);
+  }
+}
+@media screen and (min-width: 556px) {
+  .home .secContainer .homeText .title {
+    font-size: 2.5rem;
+  }
+  .home .secContainer .homeText .subTitle {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .home .secContainer .homeText {
+    padding: 1rem 10rem;
+  }
+  .home .secContainer .title {
+    font-size: 3.5rem;
+    margin: auto;
+    line-height: 4rem;
+  }
+  .home .secContainer .subTitle {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .home .secContainer .homeText .subTitle {
+    font-size: 24px;
+  }
+  .home .secContainer .homeCard {
+    width: 70%;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }/*# sourceMappingURL=home.css.map */
