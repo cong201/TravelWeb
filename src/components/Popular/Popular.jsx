@@ -37,7 +37,7 @@ const Data = [
         imgSrc: img4,
         destTitle: 'Quang Son',
         location: 'Do Luong',
-        grade: 'BEST BEAUTIFULL VILLAGE'
+        grade: 'VILLAGE'
     },
 ]
 
